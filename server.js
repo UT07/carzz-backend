@@ -21,8 +21,10 @@ if(process.env.NODE_ENV==='production'){
 
 app.use(serveStatic(path.join(__dirname, 'dist')))
 
-var port = process.env.PORT || 8000
-app.listen(port)
+const PORT=process.env.PORT||'3001'
+app.listen(PORT,()=>{
+    console.log("running server");
+});
 console.log('server started ' + port)
 
 const db=mysql.createConnection({
@@ -365,8 +367,4 @@ app.post("/filter", (req,response)=>{
   
 });
 
-const PORT=process.env.PORT||'3001'
 
-app.listen(PORT,()=>{
-    console.log("running server");
-});
