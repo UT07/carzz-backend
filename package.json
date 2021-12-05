@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  "engines":{
-    "node":"14.18.1",
-    "npm":"6.14.15"
+  "engines": {
+    "node": "14.18.1",
+    "npm": "6.14.15"
   },
   "repository": {
     "type": "git",
@@ -21,10 +21,14 @@
   },
   "homepage": "https://github.com/UT07/carzz#readme",
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
     "express-jwt": "^6.1.0",
     "messagebird": "^2.1.4",
     "mongoose": "^6.0.13",
+    "mysql": "^2.18.1",
     "nodemon": "^2.0.15",
+    "serve-static": "^1.14.1",
     "unirest": "^0.6.0"
   }
 }
