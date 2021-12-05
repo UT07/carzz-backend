@@ -28,11 +28,11 @@ app.listen(PORT,()=>{
 console.log('server started ' + PORT)
 
 const db=mysql.createConnection({
-    user:"root",
-    host:"localhost",
-    password:"password",
-    database:"project_2",
-    port:3306
+    host:"us-cdbr-east-04.cleardb.com",
+    user:"b32887c32fec09",
+    password:"4031e135",
+    database:"heroku_be59fa6fdb3f262",
+    
 });
 db.connect(function(err) {              
     if(err) {                                     
