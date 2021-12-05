@@ -25,7 +25,7 @@ const PORT=process.env.PORT||'3001'
 app.listen(PORT,()=>{
     console.log("running server");
 });
-console.log('server started ' + port)
+console.log('server started ' + PORT)
 
 const db=mysql.createConnection({
     user:"root",
